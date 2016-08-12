@@ -26,9 +26,20 @@ int main(int argc,char* argv[]){
 			cin >> a;
 			int suma;
 			int mult;
-			for(int i = grado; i>=grado; i--){
+			int cocientes[grado];
+			for(int i = grado; i>=0; i--){
+				if(i == grado){
+					cocientes[i] = coeficientes[i];
+					i--;	
+				}
 				
-			}	
+				cocientes[i] = a*cocientes[i+1]+coeficientes[i];
+				
+				
+			}
+			for(int i = grado; i>=0; i--){
+                                cout << cocientes[i] << endl;
+                        } 
 		}
 	}
 		
