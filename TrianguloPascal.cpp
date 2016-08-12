@@ -20,7 +20,7 @@ void TrianguloPascal::imprimir (){
 		if(val%2==0){
 			cout << " 0";
 		}
-		else{i
+		else{
 			cout << " *";
 		}
                 

@@ -50,6 +50,7 @@ int main(int argc,char* argv[]){
                                 cout << cocientes[i] << "x^" << i-1 << " + " ;
                         } 
 			cout << "El Residuo Es: " << cocientes[0] << endl;
+			cout << "-----------------------------" << endl;
 			for(int i = grado; i>=0; i--){
 				if (i == 0){
 					cout << setw(4) << fixed << setprecision(2) <<  coeficientes[i] << "|" << a;
