@@ -1,12 +1,19 @@
+#include "TrianguloPascal.h"
 #include <iostream>
 #include <math.h>
+#include <iomanip>
 using std::cout;
 using std::cin;
 using std::endl;
+using std::setw;
+using std::fixed;
+using std::setprecision;
+
 
 int main(int argc,char* argv[]){
 	int opcion = 0;
 	while(opcion != 3){
+		cout << endl;
 		cout << "1. Ejercicio 1" << endl;
 		cout << "2. Ejercicio 2" << endl;
 		cout << "3. Salir" << endl;
@@ -23,9 +30,6 @@ int main(int argc,char* argv[]){
 				
 			}
 			cout << "Ingrese a: " << endl;
-			cin >> a;
-			int suma;
-			int mult;
 			int cocientes[grado];
 			for(int i = grado; i>=0; i--){
 				if(i == grado){
@@ -37,13 +41,35 @@ int main(int argc,char* argv[]){
 				
 				
 			}
+			cout << "El Cociente Es: " ;
 			for(int i = grado; i>=0; i--){
-                                cout << cocientes[i] << endl;
+				if(i == 1){
+					cout << cocientes[i] << endl;
+					break;
+				}
+                                cout << cocientes[i] << "x^" << i-1 << " + " ;
                         } 
+			cout << "El Residuo Es: " << cocientes[0] << endl;
+			for(int i = grado; i>=0; i--){
+				if (i == 0){
+					cout << setw(4) << fixed << setprecision(2) <<  coeficientes[i] << "|" << a;
+				}else{
+                               	cout << setw(4) << fixed << setprecision(2) <<  coeficientes[i];            
+				} 			
+			}
+		}
+		if(opcion == 2){
+			int lineas;
+			
+			cout << "Ingrese El Numero De Lineas Del Triangulo Pascal: " << endl;
+			cin >> lineas;
+			TrianguloPascal triangulo(lineas);
+			triangulo.imprimir();			
+		
 		}
 	}
 		
-	
+		
 	return 0;
 
 
