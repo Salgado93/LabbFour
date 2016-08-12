@@ -14,6 +14,7 @@ int main(int argc,char* argv[]){
 	int opcion = 0;
 	while(opcion != 3){
 		cout << endl;
+		cout << "      Menu    " << endl;
 		cout << "1. Ejercicio 1" << endl;
 		cout << "2. Ejercicio 2" << endl;
 		cout << "3. Salir" << endl;
