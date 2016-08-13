@@ -20,6 +20,7 @@ int main(int argc,char* argv[]){
 		cout << "3. Salir" << endl;
 		cin >> opcion;
 		if(opcion == 1){
+			cout << "Ejercicio 1" << endl;
 			int grado;
 			int a;
 			cout << "Ingrese El Grado Mas Alto Del Polinomio: " << endl;
