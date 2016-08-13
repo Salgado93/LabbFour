@@ -62,6 +62,7 @@ int main(int argc,char* argv[]){
 			}
 		}
 		if(opcion == 2){
+			cout << "Ejercicio 2" << endl;
 			int lineas;
 			
 			cout << "Ingrese El Numero De Lineas Del Triangulo Pascal: " << endl;
