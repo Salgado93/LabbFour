@@ -17,7 +17,7 @@ int main(int argc,char* argv[]){
 		cout << "      Menu    " << endl;
 		cout << "1. Ejercicio 1" << endl;
 		cout << "2. Ejercicio 2" << endl;
-		cout << "3. Salir" << endl;
+		cout << "3. Salir!" << endl;
 		cin >> opcion;
 		if(opcion == 1){
 			cout << "Ejercicio 1" << endl;
